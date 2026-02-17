@@ -9,19 +9,19 @@ a.whitelink:hover { color: #dedede; text-decoration: none; }
 
 h1 small { color: #fff !important; }
 
-span.fl-number-int { display: none; }
+span.dc-number-int { display: none; }
 
-.fl-photo-caption {
+.dc-photo-caption {
   overflow: auto;
   text-overflow: initial;
   white-space: inherit;
 }
 
-.fl-row-full-height .fl-row-content-wrap {
+.dc-row-full-height .dc-row-content-wrap {
   min-height: 100vh !important;
 }
 
-#top-menu .fl-menu .menu .menu-item ul li a {
+#top-menu .dc-menu .menu .menu-item ul li a {
   text-align: right;
 }
 
@@ -64,49 +64,49 @@ html {
 }
 
 /* Ensure images scale */
-.fl-photo-img {
+.dc-photo-img {
   max-width: 100%;
   height: auto;
 }
 
 /* Animation classes - trigger on scroll */
-.fl-animation {
+.dc-animation {
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.fl-animation.fl-animated {
+.dc-animation.dc-animated {
   opacity: 1;
   transform: none;
 }
 
-.fl-fade-up { transform: translateY(30px); }
-.fl-fade-down { transform: translateY(-30px); }
-.fl-fade-in { opacity: 0; }
+.dc-fade-up { transform: translateY(30px); }
+.dc-fade-down { transform: translateY(-30px); }
+.dc-fade-in { opacity: 0; }
 
-.fl-animation.fl-animated.fl-fade-up,
-.fl-animation.fl-animated.fl-fade-down,
-.fl-animation.fl-animated.fl-fade-in {
+.dc-animation.dc-animated.dc-fade-up,
+.dc-animation.dc-animated.dc-fade-down,
+.dc-animation.dc-animated.dc-fade-in {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Gallery grid - override BB default display:none */
-.fl-gallery {
+.dc-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 
-.fl-gallery .fl-gallery-item {
+.dc-gallery .dc-gallery-item {
   display: block !important;
   width: 150px;
   min-height: 150px;
   flex: 0 0 auto;
 }
 
-.fl-gallery .fl-gallery-item .fl-photo-img {
+.dc-gallery .dc-gallery-item .dc-photo-img {
   width: 150px;
   height: 150px;
   object-fit: cover;
