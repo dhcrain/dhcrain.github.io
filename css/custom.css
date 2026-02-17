@@ -1,0 +1,113 @@
+.grad-bg {
+  background: #ffffff;
+  background: radial-gradient(ellipse at center, #ffffff 0%, #f6f6f6 0%, #747d7d 100%);
+}
+
+a.whitelink:link { color: #ffffff; }
+a.whitelink:visited { color: #ffffff; }
+a.whitelink:hover { color: #dedede; text-decoration: none; }
+
+h1 small { color: #fff !important; }
+
+span.fl-number-int { display: none; }
+
+.fl-photo-caption {
+  overflow: auto;
+  text-overflow: initial;
+  white-space: inherit;
+}
+
+.fl-row-full-height .fl-row-content-wrap {
+  min-height: 95vh !important;
+}
+
+#top-menu .fl-menu .menu .menu-item ul li a {
+  text-align: right;
+}
+
+/* Button styles */
+.btn-dhc, .btn-dhc-wht {
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 5px 5px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-dhc:hover, .btn-dhc-wht:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-dhc {
+  border-color: #53b848;
+  color: #53b848;
+}
+
+.btn-dhc:hover {
+  background: #53b848;
+  color: #fff;
+}
+
+.button-row {
+  margin: 20px 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure images scale */
+.fl-photo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation classes - trigger on scroll */
+.fl-animation {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fl-animation.fl-animated {
+  opacity: 1;
+  transform: none;
+}
+
+.fl-fade-up { transform: translateY(30px); }
+.fl-fade-down { transform: translateY(-30px); }
+.fl-fade-in { opacity: 0; }
+
+.fl-animation.fl-animated.fl-fade-up,
+.fl-animation.fl-animated.fl-fade-down,
+.fl-animation.fl-animated.fl-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gallery grid - override BB default display:none */
+.fl-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.fl-gallery .fl-gallery-item {
+  display: block !important;
+  width: 150px;
+  min-height: 150px;
+  flex: 0 0 auto;
+}
+
+.fl-gallery .fl-gallery-item .fl-photo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
