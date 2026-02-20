@@ -17,23 +17,6 @@
   $(document).ready(function() {
     animateOnScroll();
 
-    // Magnific Popup for gallery
-    if ($.fn.magnificPopup) {
-      $('.fl-gallery-mfp').magnificPopup({
-        delegate: '.fl-gallery-link',
-        type: 'image',
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true
-        },
-        image: {
-          titleSrc: function(item) {
-            return item.el.find('img').attr('title') || '';
-          }
-        }
-      });
-    }
-
     // Smooth scroll for anchor links
     $('a[href^="#"]').on('click', function(e) {
       var target = $(this.getAttribute('href'));
