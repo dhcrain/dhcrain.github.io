@@ -1,17 +1,15 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "name": "dhcrain-site",
+  "version": "1.0.0",
+  "description": "Static site for dhcrain.com",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx playwright test"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@playwright/test": "^1.49.0"
+  },
+  "dependencies": {
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0"
   }
 }
