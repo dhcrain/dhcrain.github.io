@@ -43,5 +43,10 @@
       var menu = $(this).closest('.fl-menu').find('nav ul');
       menu.toggleClass('fl-menu-open');
     });
+
+    // Close mobile menu when a link is clicked
+    $('.hero-nav-list a').on('click', function() {
+      $('.hero-nav-list').removeClass('fl-menu-open');
+    });
   });
 })(jQuery);

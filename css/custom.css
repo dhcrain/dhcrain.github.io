@@ -56,6 +56,12 @@ span.fl-number-int {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .fl-page-header-fixed-show {
+    display: none;
+  }
+}
+
 .site-header-inner {
   display: flex;
   align-items: center;
@@ -116,6 +122,18 @@ span.fl-number-int {
   margin: 1.25rem 0;
 }
 
+@media (max-width: 768px) {
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-row .btn-dhc-wht {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 /* Restore width: 100% for single-column groups (lost when fl-node-* classes were removed) */
 .fl-col-group > .fl-col:only-child {
   width: 100%;
@@ -170,7 +188,7 @@ span.fl-number-int {
   .hero-nav .fl-menu-mobile-toggle {
     display: inline-block;
     float: right;
-    color: #ffffff;
+    color: #3b414f;
     background: none;
     border: none;
     cursor: pointer;
@@ -182,6 +200,7 @@ span.fl-number-int {
   }
   .hero-nav-list.fl-menu-open {
     display: block;
+    clear: both;
   }
   .hero-nav-list li {
     display: block;
@@ -192,6 +211,12 @@ span.fl-number-int {
 .hero-logo {
   display: block;
   margin: 1.875rem auto 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    margin: 8rem auto 5rem;
+  }
 }
 
 /* Title */
@@ -217,6 +242,13 @@ span.fl-number-int {
   background: #6ce684;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero-cta-btn {
+    width: 80%;
+    text-align: center;
+  }
 }
 
 /* Mobile icons (hidden on desktop) */
@@ -265,11 +297,6 @@ span.fl-number-int {
   border: none;
   border-top: 50px solid #53b848;
   margin: -1.5rem 0 0 0;
-}
-@media (max-width: 768px) {
-  .section-separator {
-    margin-top: 1.25rem;
-  }
 }
 
 /* Smooth scrolling */
