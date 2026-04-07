@@ -92,31 +92,22 @@ span.fl-number-int {
 .btn-dhc,
 .btn-dhc-wht {
   display: inline-block;
-  padding: 0.5rem 1.25rem;
-  margin: 0.3125rem 0.3125rem;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.btn-dhc:hover,
-.btn-dhc-wht:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.3rem 2.6rem;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+  border: 2px solid;
   text-decoration: none;
 }
 
 .btn-dhc {
-  border-color: #53b848;
-  color: #53b848;
+  color: #3b414f;
+  border-color: #3b414f;
 }
 
-.btn-dhc:hover {
-  background: #53b848;
-  color: #fff;
+.btn-dhc-wht {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .button-row {
@@ -352,11 +343,6 @@ html {
 
 /* Footer */
 .site-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
   background-color: #53b848;
   color: #ffffff;
   font-size: 0.75rem;
@@ -373,7 +359,6 @@ html {
   background-color: #747d7d;
   color: #ffffff;
   text-align: center;
-  border-bottom: 50px solid #53b848;
 }
 
 .contact-inner {
@@ -520,7 +505,7 @@ html {
   color: #ffffff;
 }
 .portfolio-desc {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 

@@ -470,7 +470,7 @@
 }
 .fl-photo-content {
   display: inline-block;
-  line-height: 0;
+  line-height: 1;
   position: relative;
   max-width: 100%;
 }
@@ -1165,25 +1165,6 @@ img.mfp-img {
 }
 #social a {
   font-size: 32px;
-}
-.btn-dhc {
-  color: #3b414f;
-  font-size: 14px;
-  padding: 13px 26px;
-  border: solid #3b414f 2px;
-  text-decoration: none;
-  margin-right: 15px;
-}
-.btn-dhc:hover {
-  text-decoration: none;
-}
-.btn-dhc-wht {
-  color: #ffffff;
-  font-size: 14px;
-  padding: 13px 26px;
-  border: solid #ffffff 2px;
-  text-decoration: none;
-  margin-right: 15px;
 }
 @media (max-width: 992px) {
   .button-row a {
